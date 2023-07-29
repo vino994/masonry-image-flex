@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <title>Document</title>
+</head>
+<body>
+    <h1>Flex-Mansory-Layout</h1>
+    <div class="container">
+        
+        <div class="box">
+          
+        </div>
+    </div>
+    <script>
+        var box= document.querySelector('.box');
+
+        for(var i=1;i<=1000;i++){
+            var div = document.createElement('div');
+            div.style.background =RandomColor();
+            box.appendChild(div);
+        }
+
+        function RandomColor(){
+
+            var letters = '0123456789ABCDEF';  
+var Color = '#'
+            for(var j=0;j<6;j++){
+                Color += letters[Math.floor(Math.random()* 16)]
+            }
+            return Color;
+        }
+    </script>
+</body>
+</html>
